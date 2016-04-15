@@ -1,0 +1,115 @@
+body {
+	background-color:gray;
+}
+
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+	
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row {
+	margin-left:-8px;
+	margin-right:-8px;
+	background-color: gray;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#work {
+	position:relative;
+	top:-10px;
+	z-index:-3;
+}
+
+#bar {
+	background-color:blue;
+	height:90px;
+}
+
+#bartext {
+	position:relative;
+	top:5px;
+	color:white;
+}
+
+#logo {
+	height:30px;
+}
+
+#contact {
+	position:relative;
+	top:0px;
+	background-color:transparent;
+	z-index:-2;
+	margin-bottom:-50px;
+}
+	
+@media only screen and (min-width: 992px) {
+	
+	#work {
+		position:relative;
+		top:50px;
+		
+	}
+	#bar {
+		position:fixed;
+		width:105%;
+		background-color:blue;
+		height:60px;
+	}
+	
+	#arbeit_01 {
+		position: relative;
+		left: -450px;
+		margin-left:150%;
+	}
+	
+	#arbeit_03 {
+		position: relative;
+		float: left;
+		left: -50%;
+		margin-left: 150px;
+	}
+	
+	#contact {
+		position: relative;
+		top:60px;
+	}
+}
+
+		
+@media only screen and (min-width: 768px) {
+
+
+	#phone {
+		float: right;
+    }
+	
+	#email {
+		float: left;
+	}
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
