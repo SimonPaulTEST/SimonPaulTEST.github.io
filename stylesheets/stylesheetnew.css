@@ -1,0 +1,136 @@
+body {
+	background-color:gray;
+}
+
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+	
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row {
+	margin-left:-8px;
+	margin-right:-8px;
+	background-color: gray;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#bg {
+	position:fixed;
+	z-index:-4;
+	width:2500px;
+	height:auto;
+	left: 50%;
+	top: 0px;
+	margin-left: -1220px;
+	margin-top: 0px;
+}
+
+#work {
+	position:relative;
+	top:1080px;
+	z-index:-3;
+	background-color:white;
+}
+
+#bar {
+	background-color:blue;
+	height:90px;
+}
+
+#bartext {
+	position:relative;
+	top:5px;
+	color:white;
+	z-index:2;
+}
+
+#logo {
+	height:30px;
+}
+
+#contact {
+	position:relative;
+	top:1500px;
+	background-color:light-gray;
+	z-index:-2;
+	margin-bottom:-50px;
+}
+	
+@media only screen and (min-width: 992px) {
+	
+	#bg {
+		position:fixed;
+		width:1920px;
+		height:1080px;
+		margin-left: -960px;
+	}
+	
+	#work {
+		position:relative;
+		top:1000px;
+		height:500px;
+		
+	}
+	#bar {
+		position:fixed;
+		width:105%;
+		background-color:blue;
+		height:60px;
+	}
+	
+	#arbeit_01 {
+		position: relative;
+		left: -450px;
+		margin-left:150%;
+	}
+	
+	#arbeit_03 {
+		position: relative;
+		float: left;
+		left: -50%;
+		margin-left: 150px;
+	}
+	
+	#contact {
+		position: relative;
+		top:1560px;
+	}
+}
+
+		
+@media only screen and (min-width: 768px) {
+
+
+	#phone {
+		float: right;
+    }
+	
+	#email {
+		float: left;
+	}
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
